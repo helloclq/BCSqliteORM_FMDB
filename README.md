@@ -116,9 +116,9 @@ query many models
 -----------------
 ``` objectivec
 NSArray* entities  = [helper queryEntitiesByCondition:
-															BCQueryParameterMake([ClassEntity class],
-															nil, @"classId = ?", @[@1], 
-															nil, nil, -1, -1)];
+				BCQueryParameterMake([ClassEntity class],
+				nil, @"classId = ?", @[@1],
+				nil, nil, -1, -1)];
 NSLog(@"entities:----%@",entities);
 ```
 OR 
