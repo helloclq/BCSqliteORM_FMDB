@@ -79,84 +79,83 @@
 /******************************************************************/
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        // insert code here...
-        NSLog(@"Hello, World!");
-
+        //build two model
         ClassEntity* classeEntity = [ClassEntity new];
         classeEntity.className = @"Software02";
-        classeEntity.classId = 2;
+        classeEntity.classId = 1;
 
         StudentEntity* student = [StudentEntity new];
         student.age = 12;
         student.score = 80;
-        student.classId = 2;
+        student.classId = 1;
         student.studentNum = 421125;
         student.studentName = @"BlockCheng";
 
-
+        //init and mapping ,or open an existing database file,
         BCORMHelper* helper = [[BCORMHelper alloc]initWithDatabaseName:@"test.db" enties: @[ [ClassEntity class],[StudentEntity class]]];
 
-//         BCORMHelper* helper = [[BCORMHelper alloc]initWithDatabasePath:@"/Users/BlockCheng/Library/Application Support/test.db" enties: @[ [ClassEntity class],[StudentEntity class]]];
-
+        
+        //insert
         for (int i  = 0 ;i <  10; i ++) {
             classeEntity.classId =  i % 10;
             classeEntity.className = [NSString stringWithFormat:@"Class E_%d_%@",i,[NSDate date]];
             [helper save:classeEntity];
         }
 
-
-
         for (int i  = 0 ;i <  100; i ++) {
             student.studentNum = 421125 + i ;
-            student.classId = i % 10;
+            student.classId = i % 10 + 1;
             student.studentName = [NSString stringWithFormat:@"student_%d_%@",i,[NSDate date]];
              [helper save:student];
         }
 
-
-
+        //query
         BCSqlParameter *queryParam  = [[BCSqlParameter  alloc] init];
         queryParam.entityClass = [StudentEntity class];
         queryParam.propertyArray = @[@"age",@"classId",@"score",@"studentName",@"studentNum"];
         queryParam.selection = @"classId = ? and studentNum=?";
-        queryParam.selectionArgs = @[@1,@421128];
+        queryParam.selectionArgs = @[@1,@421125];
         queryParam.orderBy = @" studentNum  asc";
         id entity  = [helper queryEntityByCondition:queryParam];
         NSLog(@"entity:----%@",entity);
 
-        entity  = [helper queryEntityByCondition:BCQueryParameterMake([StudentEntity class], @[@"age",@"classId",@"score",@"studentName",@"studentNum"], @"classId = ? and studentNum=?", @[@1,@421128], @" studentNum  asc", nil, -1, -1)];
+        //another way to query
+        entity  = [helper queryEntityByCondition:BCQueryParameterMake([StudentEntity class], @[@"age",@"classId",@"score",@"studentName",@"studentNum"], @"classId = ? and studentNum=?", @[@1,@421128], nil,@" studentNum  asc",  -1, -1)];
         NSLog(@"entity:----%@",entity);
 
+        //query many models
         queryParam.propertyArray = nil;
         queryParam.selection = @"classId = ?";
         queryParam.selectionArgs = @[@1];
         NSArray* entities  = [helper queryEntitiesByCondition:queryParam];
          NSLog(@"entities:----%@",entities);
-
+        //query by condition
         entities  = [helper queryEntitiesByCondition:BCQueryParameterMake([ClassEntity class], nil, @"classId = ?", @[@1], nil, nil, -1, -1)];
          NSLog(@"entities:----%@",entities);
 
+        //update a model
         student.studentName = @"BlockCheng_Update";
          [helper update:student];
 
-
+        //query many model by condition
         entity  = [helper queryEntityByCondition:BCQueryParameterMakeSimple([StudentEntity class], nil, @"studentNum=?", @[@421138])];
         NSLog(@"entity:----%@",entity);
 
+        //delete
         [helper remove:entity];
 
+        //query many model by condition
         entity  = [helper queryEntityByCondition:BCQueryParameterMakeSimple([StudentEntity class], nil, @"studentNum=?", @[@421138])];
         NSLog(@"entity:----%@",entity);
 
+        //update many model by condition
         [helper updateByCondition:BCUpdateParameterMake([StudentEntity class], @"studentName=?", @[@"new_name"], @"studentNum=?", @[@421125])];
 
         entity  = [helper queryEntityByCondition:BCQueryParameterMakeSimple([StudentEntity class], nil, @"studentNum=?", @[@421125])];
         NSLog(@"entity:----%@",entity);
 
-
+        //delete by condition
         [helper deleteByCondition:BCDeleteParameterMake([StudentEntity class],  @"studentNum < ?", @[@421135])];
-
-
 
     }
     return 0;

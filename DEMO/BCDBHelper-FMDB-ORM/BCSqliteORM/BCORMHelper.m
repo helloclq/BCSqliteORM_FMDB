@@ -1033,7 +1033,6 @@
 
     //sort property key by lenght of string.
     NSArray* tmpProperties  = [classTableMapping allKeys];
-    LogDB(@"%@",tmpProperties);
     tmpProperties = [tmpProperties sortedArrayUsingComparator:^NSComparisonResult(id obj1, id obj2) {
         NSString* item1 = obj1,  * item2 = obj2;
         if ( item1.length <  item2.length ) {
@@ -1041,7 +1040,6 @@
         }
         return NSOrderedAscending;
     }];
-    LogDB(@"%@",tmpProperties);
     __block NSString* tmpSelection =  condition.selection;
 
     if ( condition.selection ) {
