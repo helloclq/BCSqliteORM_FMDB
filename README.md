@@ -161,6 +161,8 @@ OR with delete condition
 [helper deleteByCondition:BCDeleteParameterMake([StudentEntity class],@"studentNum < ?", @[@421135])];
     
 ```
+architecture
+![demo screenshot](https://github.com/helloclq/BCSqliteORM_FMDB/blob/master/Screen%20Shot%202015-09-10%20at%2021.28.48.png)
 
 ## License
 
