@@ -52,14 +52,13 @@ you can create a new datase file ,or open an existing file like this
 
 ``` objectivec
 BCORMHelper* helper = [[BCORMHelper alloc]initWithDatabaseName:@"test.db" 
-											enties: @[ [ClassEntity class],[StudentEntity class]]];
+				           enties: @[ [ClassEntity class],[StudentEntity class]]];
 ```
 OR
 
 ``` objectivec
-BCORMHelper* helper = [[BCORMHelper alloc]
-													initWithDatabasePath:@"/Users/BlockCheng/Library/Application Support/test.db" 
-													enties: @[ [ClassEntity class],[StudentEntity class]]];
+BCORMHelper* helper = [[BCORMHelper alloc]													initWithDatabasePath:@"/Users/BlockCheng/Library/Application Support/test.db" 
+			enties: @[ [ClassEntity class],[StudentEntity class]]];
 ```
 
 
@@ -105,12 +104,10 @@ NSLog(@"entity:----%@",entity);
 ```
 OR simply use
 ``` objectivec
-entity  = [helper queryEntityByCondition:
-										BCQueryParameterMake([StudentEntity class],
-																	@[@"age",@"classId",@"score",@"studentName",@"studentNum"],
-																	@"classId = ? and studentNum=?",
-																	@[@1,@421128], 
-																		   @" studentNum  asc", nil, -1, -1)];
+entity  = [helper queryEntityByCondition:BCQueryParameterMake([StudentEntity class],
+						@[@"age",@"classId",@"score",@"studentName",@"studentNum"],@"classId = ? and studentNum=?",
+						@[@1,@421128], 
+						@" studentNum  asc", nil, -1, -1)];
 NSLog(@"entity:----%@",entity);
 ```
 
@@ -141,9 +138,7 @@ update
 ```
 OR with a update condition
 ``` objectivec
-[helper updateByCondition:BCUpdateParameterMake([StudentEntity class],
-					 						@"studentName=?", @[@"new_name"],
-					 						@"studentNum=?", @[@421125])];
+[helper updateByCondition:BCUpdateParameterMake([StudentEntity class],@"studentName=?", @[@"new_name"],@"studentNum=?", @[@421125])];
 ```
 
 delete 
@@ -154,8 +149,7 @@ delete
 ```
 OR with delete condition
 ``` objectivec
-[helper deleteByCondition:BCDeleteParameterMake([StudentEntity class], 
-																 @"studentNum < ?", @[@421135])];
+[helper deleteByCondition:BCDeleteParameterMake([StudentEntity class],@"studentNum < ?", @[@421135])];
     
 ```
 
