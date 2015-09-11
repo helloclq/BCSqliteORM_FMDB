@@ -38,11 +38,19 @@ make your model entity implement BCORMEntityProtocol protocol
 +(NSDictionary*)tableEntityMapping
 {
     return @{ @"classId":BCSqliteTypeMakeIntPrimaryKey(@"id", YES),
-              @"className":BCSqliteTypeMakeText(@"name", NO)
+              @"className":BCSqliteTypeMakeTextDefault(@"name", NO,@"Software01")
               };
 }
 @end
 ```
+it will build a table like this.or just make a mapping 
+![demo screenshot](https://github.com/helloclq/BCSqliteORM_FMDB/blob/master/Screen%20Shot%202015-09-10%20at%2008.21.25.png)
+
+it will build a sql like this:
+CREATE TABLE class (
+  id integer PRIMARY KEY AUTOINCREMENT NOT NULL,
+  name text NOT NULL DEFAULT('Software01')
+);
 
 
 
