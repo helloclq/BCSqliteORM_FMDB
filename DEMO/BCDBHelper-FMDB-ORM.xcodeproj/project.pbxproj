@@ -1,0 +1,433 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D15A294B1B7ED7190084BBCC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D15A294A1B7ED7190084BBCC /* main.m */; };
+		D15A296F1B7ED88E0084BBCC /* FMDatabase+FTS3.m in Sources */ = {isa = PBXBuildFile; fileRef = D15A29561B7ED88E0084BBCC /* FMDatabase+FTS3.m */; };
+		D15A29701B7ED88E0084BBCC /* FMTokenizers.m in Sources */ = {isa = PBXBuildFile; fileRef = D15A29581B7ED88E0084BBCC /* FMTokenizers.m */; };
+		D15A29711B7ED88E0084BBCC /* FMDatabase+InMemoryOnDiskIO.m in Sources */ = {isa = PBXBuildFile; fileRef = D15A295C1B7ED88E0084BBCC /* FMDatabase+InMemoryOnDiskIO.m */; };
+		D15A29741B7ED88E0084BBCC /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = D15A29621B7ED88E0084BBCC /* FMDatabase.m */; };
+		D15A29751B7ED88E0084BBCC /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D15A29641B7ED88E0084BBCC /* FMDatabaseAdditions.m */; };
+		D15A29761B7ED88E0084BBCC /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = D15A29661B7ED88E0084BBCC /* FMDatabasePool.m */; };
+		D15A29771B7ED88E0084BBCC /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = D15A29681B7ED88E0084BBCC /* FMDatabaseQueue.m */; };
+		D15A29781B7ED88E0084BBCC /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = D15A296B1B7ED88E0084BBCC /* FMResultSet.m */; };
+		D15A29791B7ED88E0084BBCC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D15A296E1B7ED88E0084BBCC /* main.m */; };
+		D15A29BC1B81DA450084BBCC /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D15A29BB1B81DA450084BBCC /* libsqlite3.dylib */; };
+		D1700AD01BA24CD6005BCD93 /* BCORMHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = D1700ABF1BA24CD6005BCD93 /* BCORMHelper.m */; };
+		D1700AD11BA24CD6005BCD93 /* BCSqlParameter.m in Sources */ = {isa = PBXBuildFile; fileRef = D1700AC11BA24CD6005BCD93 /* BCSqlParameter.m */; };
+		D1700AD21BA24CD6005BCD93 /* BCConstraints.m in Sources */ = {isa = PBXBuildFile; fileRef = D1700AC41BA24CD6005BCD93 /* BCConstraints.m */; };
+		D1700AD31BA24CD6005BCD93 /* BCReferences.m in Sources */ = {isa = PBXBuildFile; fileRef = D1700AC61BA24CD6005BCD93 /* BCReferences.m */; };
+		D1700AD41BA24CD6005BCD93 /* BCSqlInt.m in Sources */ = {isa = PBXBuildFile; fileRef = D1700AC91BA24CD6005BCD93 /* BCSqlInt.m */; };
+		D1700AD51BA24CD6005BCD93 /* BCSqliteType.m in Sources */ = {isa = PBXBuildFile; fileRef = D1700ACB1BA24CD6005BCD93 /* BCSqliteType.m */; };
+		D1700AD61BA24CD6005BCD93 /* BCSqlReal.m in Sources */ = {isa = PBXBuildFile; fileRef = D1700ACD1BA24CD6005BCD93 /* BCSqlReal.m */; };
+		D1700AD71BA24CD6005BCD93 /* BCSqlText.m in Sources */ = {isa = PBXBuildFile; fileRef = D1700ACF1BA24CD6005BCD93 /* BCSqlText.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D15A29451B7ED7190084BBCC /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		D15A29471B7ED7190084BBCC /* BCDBHelper-FMDB-ORM */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "BCDBHelper-FMDB-ORM"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D15A294A1B7ED7190084BBCC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D15A29551B7ED88E0084BBCC /* FMDatabase+FTS3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FMDatabase+FTS3.h"; sourceTree = "<group>"; };
+		D15A29561B7ED88E0084BBCC /* FMDatabase+FTS3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FMDatabase+FTS3.m"; sourceTree = "<group>"; };
+		D15A29571B7ED88E0084BBCC /* FMTokenizers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMTokenizers.h; sourceTree = "<group>"; };
+		D15A29581B7ED88E0084BBCC /* FMTokenizers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMTokenizers.m; sourceTree = "<group>"; };
+		D15A29591B7ED88E0084BBCC /* fts3_tokenizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fts3_tokenizer.h; sourceTree = "<group>"; };
+		D15A295B1B7ED88E0084BBCC /* FMDatabase+InMemoryOnDiskIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FMDatabase+InMemoryOnDiskIO.h"; sourceTree = "<group>"; };
+		D15A295C1B7ED88E0084BBCC /* FMDatabase+InMemoryOnDiskIO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FMDatabase+InMemoryOnDiskIO.m"; sourceTree = "<group>"; };
+		D15A29611B7ED88E0084BBCC /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		D15A29621B7ED88E0084BBCC /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		D15A29631B7ED88E0084BBCC /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		D15A29641B7ED88E0084BBCC /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		D15A29651B7ED88E0084BBCC /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		D15A29661B7ED88E0084BBCC /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		D15A29671B7ED88E0084BBCC /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		D15A29681B7ED88E0084BBCC /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		D15A29691B7ED88E0084BBCC /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		D15A296A1B7ED88E0084BBCC /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		D15A296B1B7ED88E0084BBCC /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		D15A296D1B7ED88E0084BBCC /* fmdb_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fmdb_Prefix.pch; sourceTree = "<group>"; };
+		D15A296E1B7ED88E0084BBCC /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D15A29BB1B81DA450084BBCC /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		D1700AB91BA1D2FB005BCD93 /* class UML.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "class UML.png"; sourceTree = "<group>"; };
+		D1700ABB1BA24CD6005BCD93 /* BCDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCDB.h; sourceTree = "<group>"; };
+		D1700ABC1BA24CD6005BCD93 /* BCORMEntityProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCORMEntityProtocol.h; sourceTree = "<group>"; };
+		D1700ABD1BA24CD6005BCD93 /* BCORMHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCORMHeader.h; sourceTree = "<group>"; };
+		D1700ABE1BA24CD6005BCD93 /* BCORMHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCORMHelper.h; sourceTree = "<group>"; };
+		D1700ABF1BA24CD6005BCD93 /* BCORMHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCORMHelper.m; sourceTree = "<group>"; };
+		D1700AC01BA24CD6005BCD93 /* BCSqlParameter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCSqlParameter.h; sourceTree = "<group>"; };
+		D1700AC11BA24CD6005BCD93 /* BCSqlParameter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCSqlParameter.m; sourceTree = "<group>"; };
+		D1700AC31BA24CD6005BCD93 /* BCConstraints.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCConstraints.h; sourceTree = "<group>"; };
+		D1700AC41BA24CD6005BCD93 /* BCConstraints.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCConstraints.m; sourceTree = "<group>"; };
+		D1700AC51BA24CD6005BCD93 /* BCReferences.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCReferences.h; sourceTree = "<group>"; };
+		D1700AC61BA24CD6005BCD93 /* BCReferences.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCReferences.m; sourceTree = "<group>"; };
+		D1700AC81BA24CD6005BCD93 /* BCSqlInt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCSqlInt.h; sourceTree = "<group>"; };
+		D1700AC91BA24CD6005BCD93 /* BCSqlInt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCSqlInt.m; sourceTree = "<group>"; };
+		D1700ACA1BA24CD6005BCD93 /* BCSqliteType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCSqliteType.h; sourceTree = "<group>"; };
+		D1700ACB1BA24CD6005BCD93 /* BCSqliteType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCSqliteType.m; sourceTree = "<group>"; };
+		D1700ACC1BA24CD6005BCD93 /* BCSqlReal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCSqlReal.h; sourceTree = "<group>"; };
+		D1700ACD1BA24CD6005BCD93 /* BCSqlReal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCSqlReal.m; sourceTree = "<group>"; };
+		D1700ACE1BA24CD6005BCD93 /* BCSqlText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCSqlText.h; sourceTree = "<group>"; };
+		D1700ACF1BA24CD6005BCD93 /* BCSqlText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCSqlText.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D15A29441B7ED7190084BBCC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D15A29BC1B81DA450084BBCC /* libsqlite3.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D15A293E1B7ED7190084BBCC = {
+			isa = PBXGroup;
+			children = (
+				D15A29BB1B81DA450084BBCC /* libsqlite3.dylib */,
+				D15A29491B7ED7190084BBCC /* BCDBHelper-FMDB-ORM */,
+				D15A29481B7ED7190084BBCC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D15A29481B7ED7190084BBCC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D15A29471B7ED7190084BBCC /* BCDBHelper-FMDB-ORM */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D15A29491B7ED7190084BBCC /* BCDBHelper-FMDB-ORM */ = {
+			isa = PBXGroup;
+			children = (
+				D1700ABA1BA24CD6005BCD93 /* BCSqliteORM */,
+				D1700AB91BA1D2FB005BCD93 /* class UML.png */,
+				D15A29521B7ED88E0084BBCC /* FMDB */,
+				D15A294A1B7ED7190084BBCC /* main.m */,
+			);
+			path = "BCDBHelper-FMDB-ORM";
+			sourceTree = "<group>";
+		};
+		D15A29521B7ED88E0084BBCC /* FMDB */ = {
+			isa = PBXGroup;
+			children = (
+				D15A29531B7ED88E0084BBCC /* extra */,
+				D15A29601B7ED88E0084BBCC /* fmdb */,
+				D15A296C1B7ED88E0084BBCC /* sample */,
+			);
+			path = FMDB;
+			sourceTree = "<group>";
+		};
+		D15A29531B7ED88E0084BBCC /* extra */ = {
+			isa = PBXGroup;
+			children = (
+				D15A29541B7ED88E0084BBCC /* fts3 */,
+				D15A295A1B7ED88E0084BBCC /* InMemoryOnDiskIO */,
+			);
+			path = extra;
+			sourceTree = "<group>";
+		};
+		D15A29541B7ED88E0084BBCC /* fts3 */ = {
+			isa = PBXGroup;
+			children = (
+				D15A29551B7ED88E0084BBCC /* FMDatabase+FTS3.h */,
+				D15A29561B7ED88E0084BBCC /* FMDatabase+FTS3.m */,
+				D15A29571B7ED88E0084BBCC /* FMTokenizers.h */,
+				D15A29581B7ED88E0084BBCC /* FMTokenizers.m */,
+				D15A29591B7ED88E0084BBCC /* fts3_tokenizer.h */,
+			);
+			path = fts3;
+			sourceTree = "<group>";
+		};
+		D15A295A1B7ED88E0084BBCC /* InMemoryOnDiskIO */ = {
+			isa = PBXGroup;
+			children = (
+				D15A295B1B7ED88E0084BBCC /* FMDatabase+InMemoryOnDiskIO.h */,
+				D15A295C1B7ED88E0084BBCC /* FMDatabase+InMemoryOnDiskIO.m */,
+			);
+			path = InMemoryOnDiskIO;
+			sourceTree = "<group>";
+		};
+		D15A29601B7ED88E0084BBCC /* fmdb */ = {
+			isa = PBXGroup;
+			children = (
+				D15A29611B7ED88E0084BBCC /* FMDatabase.h */,
+				D15A29621B7ED88E0084BBCC /* FMDatabase.m */,
+				D15A29631B7ED88E0084BBCC /* FMDatabaseAdditions.h */,
+				D15A29641B7ED88E0084BBCC /* FMDatabaseAdditions.m */,
+				D15A29651B7ED88E0084BBCC /* FMDatabasePool.h */,
+				D15A29661B7ED88E0084BBCC /* FMDatabasePool.m */,
+				D15A29671B7ED88E0084BBCC /* FMDatabaseQueue.h */,
+				D15A29681B7ED88E0084BBCC /* FMDatabaseQueue.m */,
+				D15A29691B7ED88E0084BBCC /* FMDB.h */,
+				D15A296A1B7ED88E0084BBCC /* FMResultSet.h */,
+				D15A296B1B7ED88E0084BBCC /* FMResultSet.m */,
+			);
+			path = fmdb;
+			sourceTree = "<group>";
+		};
+		D15A296C1B7ED88E0084BBCC /* sample */ = {
+			isa = PBXGroup;
+			children = (
+				D15A296D1B7ED88E0084BBCC /* fmdb_Prefix.pch */,
+				D15A296E1B7ED88E0084BBCC /* main.m */,
+			);
+			path = sample;
+			sourceTree = "<group>";
+		};
+		D1700ABA1BA24CD6005BCD93 /* BCSqliteORM */ = {
+			isa = PBXGroup;
+			children = (
+				D1700ABB1BA24CD6005BCD93 /* BCDB.h */,
+				D1700ABC1BA24CD6005BCD93 /* BCORMEntityProtocol.h */,
+				D1700ABD1BA24CD6005BCD93 /* BCORMHeader.h */,
+				D1700ABE1BA24CD6005BCD93 /* BCORMHelper.h */,
+				D1700ABF1BA24CD6005BCD93 /* BCORMHelper.m */,
+				D1700AC01BA24CD6005BCD93 /* BCSqlParameter.h */,
+				D1700AC11BA24CD6005BCD93 /* BCSqlParameter.m */,
+				D1700AC21BA24CD6005BCD93 /* SqliteConstraints */,
+				D1700AC71BA24CD6005BCD93 /* SqliteType */,
+			);
+			path = BCSqliteORM;
+			sourceTree = "<group>";
+		};
+		D1700AC21BA24CD6005BCD93 /* SqliteConstraints */ = {
+			isa = PBXGroup;
+			children = (
+				D1700AC31BA24CD6005BCD93 /* BCConstraints.h */,
+				D1700AC41BA24CD6005BCD93 /* BCConstraints.m */,
+				D1700AC51BA24CD6005BCD93 /* BCReferences.h */,
+				D1700AC61BA24CD6005BCD93 /* BCReferences.m */,
+			);
+			path = SqliteConstraints;
+			sourceTree = "<group>";
+		};
+		D1700AC71BA24CD6005BCD93 /* SqliteType */ = {
+			isa = PBXGroup;
+			children = (
+				D1700AC81BA24CD6005BCD93 /* BCSqlInt.h */,
+				D1700AC91BA24CD6005BCD93 /* BCSqlInt.m */,
+				D1700ACA1BA24CD6005BCD93 /* BCSqliteType.h */,
+				D1700ACB1BA24CD6005BCD93 /* BCSqliteType.m */,
+				D1700ACC1BA24CD6005BCD93 /* BCSqlReal.h */,
+				D1700ACD1BA24CD6005BCD93 /* BCSqlReal.m */,
+				D1700ACE1BA24CD6005BCD93 /* BCSqlText.h */,
+				D1700ACF1BA24CD6005BCD93 /* BCSqlText.m */,
+			);
+			path = SqliteType;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D15A29461B7ED7190084BBCC /* BCDBHelper-FMDB-ORM */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D15A294E1B7ED7190084BBCC /* Build configuration list for PBXNativeTarget "BCDBHelper-FMDB-ORM" */;
+			buildPhases = (
+				D15A29431B7ED7190084BBCC /* Sources */,
+				D15A29441B7ED7190084BBCC /* Frameworks */,
+				D15A29451B7ED7190084BBCC /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "BCDBHelper-FMDB-ORM";
+			productName = "BCDBHelper-FMDB-ORM";
+			productReference = D15A29471B7ED7190084BBCC /* BCDBHelper-FMDB-ORM */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D15A293F1B7ED7190084BBCC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = BlockCheng;
+				TargetAttributes = {
+					D15A29461B7ED7190084BBCC = {
+						CreatedOnToolsVersion = 6.4;
+					};
+				};
+			};
+			buildConfigurationList = D15A29421B7ED7190084BBCC /* Build configuration list for PBXProject "BCDBHelper-FMDB-ORM" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D15A293E1B7ED7190084BBCC;
+			productRefGroup = D15A29481B7ED7190084BBCC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D15A29461B7ED7190084BBCC /* BCDBHelper-FMDB-ORM */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D15A29431B7ED7190084BBCC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1700AD61BA24CD6005BCD93 /* BCSqlReal.m in Sources */,
+				D1700AD41BA24CD6005BCD93 /* BCSqlInt.m in Sources */,
+				D15A294B1B7ED7190084BBCC /* main.m in Sources */,
+				D1700AD51BA24CD6005BCD93 /* BCSqliteType.m in Sources */,
+				D15A29701B7ED88E0084BBCC /* FMTokenizers.m in Sources */,
+				D15A29741B7ED88E0084BBCC /* FMDatabase.m in Sources */,
+				D1700AD21BA24CD6005BCD93 /* BCConstraints.m in Sources */,
+				D1700AD01BA24CD6005BCD93 /* BCORMHelper.m in Sources */,
+				D1700AD71BA24CD6005BCD93 /* BCSqlText.m in Sources */,
+				D15A29761B7ED88E0084BBCC /* FMDatabasePool.m in Sources */,
+				D15A29771B7ED88E0084BBCC /* FMDatabaseQueue.m in Sources */,
+				D15A296F1B7ED88E0084BBCC /* FMDatabase+FTS3.m in Sources */,
+				D15A29781B7ED88E0084BBCC /* FMResultSet.m in Sources */,
+				D15A29711B7ED88E0084BBCC /* FMDatabase+InMemoryOnDiskIO.m in Sources */,
+				D1700AD31BA24CD6005BCD93 /* BCReferences.m in Sources */,
+				D1700AD11BA24CD6005BCD93 /* BCSqlParameter.m in Sources */,
+				D15A29791B7ED88E0084BBCC /* main.m in Sources */,
+				D15A29751B7ED88E0084BBCC /* FMDatabaseAdditions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D15A294C1B7ED7190084BBCC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx10.10;
+			};
+			name = Debug;
+		};
+		D15A294D1B7ED7190084BBCC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx10.10;
+			};
+			name = Release;
+		};
+		D15A294F1B7ED7190084BBCC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D15A29501B7ED7190084BBCC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D15A29421B7ED7190084BBCC /* Build configuration list for PBXProject "BCDBHelper-FMDB-ORM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D15A294C1B7ED7190084BBCC /* Debug */,
+				D15A294D1B7ED7190084BBCC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D15A294E1B7ED7190084BBCC /* Build configuration list for PBXNativeTarget "BCDBHelper-FMDB-ORM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D15A294F1B7ED7190084BBCC /* Debug */,
+				D15A29501B7ED7190084BBCC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D15A293F1B7ED7190084BBCC /* Project object */;
+}

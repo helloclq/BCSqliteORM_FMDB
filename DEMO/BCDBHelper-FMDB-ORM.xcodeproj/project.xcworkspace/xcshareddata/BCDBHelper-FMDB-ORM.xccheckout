@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>5FE6CE99-BB97-40EB-86E3-1C6C83CB85AE</string>
+	<key>IDESourceControlProjectName</key>
+	<string>BCDBHelper-FMDB-ORM</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>9ABA06A4BA55277BEBD2365BE54BC594D4AE348D</key>
+		<string>https://github.com/helloclq/BCSqliteORM_FMDB.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>DEMO/BCDBHelper-FMDB-ORM.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>9ABA06A4BA55277BEBD2365BE54BC594D4AE348D</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/helloclq/BCSqliteORM_FMDB.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>9ABA06A4BA55277BEBD2365BE54BC594D4AE348D</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>9ABA06A4BA55277BEBD2365BE54BC594D4AE348D</string>
+			<key>IDESourceControlWCCName</key>
+			<string>BCSqliteORM_FMDB</string>
+		</dict>
+	</array>
+</dict>
+</plist>
